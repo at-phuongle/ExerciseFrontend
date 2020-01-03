@@ -8,17 +8,15 @@ body{
  /* padding: 0 auto; */
 }
 .container{
-  width: 77.625%;
-  margin: auto;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 .page-header{
   font-family: 'Myriad Pro Regular';
   margin-top: 11px;
 }
 .header-top{
-  /* padding: 0 180px; */
-  /* width: 77.625%;
-  margin: auto; */
   margin-bottom: 16px;
   display: flex;
   align-items: center;
@@ -56,24 +54,27 @@ font-size: 12pt;
 margin-left: 0.5625%;
   color: #4cc1fc;
 }
+.page-nav-fluid {
+  border-top: 1px solid #e9e9e9;
+}
 .page-nav{
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12pt;
   display: flex;
   flex-wrap: wrap;
-  border-top: 1px solid #e9e9e9;
   box-sizing: border-box;
   /* padding: 0 180px; */
   /* width: 77.625%; */
-  padding: 0 11.25%;
+  /* padding: 0 11.25%; */
   margin: auto;
   height: 62px;
   align-items: center;
 }
-#breadcrumb {
+
+.breadcrumb {
   /* padding: 0 180px; */
-  width: 77.625%;
-  margin: auto;
+  display: flex;
+  list-style-type: none;
 }
 .menu{
   list-style: none;
@@ -125,18 +126,18 @@ margin-left: 0.5625%;
     height: 161px;
     align-items: center;
   }
-  #breadcrumb{
+  .breadcrumb{
     border:0;
   }
-  #breadcrumb li a {
+  .breadcrumb li a {
     text-decoration: none;
     color: #0d1d25;
   }
-#breadcrumb li+li:before {
+.breadcrumb li+li:before {
     color: black;
     content: "/\00a0";
   }
-#breadcrumb li a:hover {
+.breadcrumb li a:hover {
     color: #01447e;
     text-decoration: underline;
   }
@@ -168,7 +169,10 @@ justify-content: center;
   margin-left: auto;
 }
 .dropdown-container{
-  padding: 0 19px;
+  padding: 10px 19px;
+}
+.dropdown-item {
+  padding: 10px 0px;
 }
 .dropdown-container a{
   text-decoration: none;
@@ -187,7 +191,9 @@ justify-content: center;
   padding-top: 1.3125rem;
 }
 .book-content{
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .books-chedule{
   background-color: #d9e4e9;
@@ -198,6 +204,8 @@ justify-content: center;
   width: 100%;
   height: 2.375rem;
   margin-bottom: 16px;
+  padding-left: 12px;
+  box-sizing: border-box;
 }
 .books-chedule input[type="submit"]{
   background-color: #4bbc56;
@@ -209,10 +217,15 @@ justify-content: center;
   color: #ffffff;
   font-family: 'Myriad Pro Regular';
 }
+.page-footer{
+  border-bottom: 1px solid #81d1f9;
+}
+.container-fluid {
+  width: 100%;
+}
 .content-footer{
   display: flex;
-  padding: 50px 180px;
-  border-bottom: 1px solid #81d1f9;
+  padding: 50px 0px;
   box-sizing: border-box;
 }
 .page-footer_item{
@@ -231,7 +244,7 @@ justify-content: center;
   margin-bottom: 21px;
 }
 .coppy-right-footer{
-  padding: 25px 180px;
+  padding: 25px 0px;
 }
 .list-item{
   /* display: grid;
